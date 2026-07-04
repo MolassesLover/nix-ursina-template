@@ -32,7 +32,7 @@ buildPythonPackage rec {
   nativeBuildInputs = [
     autoPatchelfHook
   ];
-  
+
   buildInputs = [
     atk
     fontconfig
