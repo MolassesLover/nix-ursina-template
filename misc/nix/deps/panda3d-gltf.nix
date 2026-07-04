@@ -12,7 +12,6 @@ buildPythonPackage rec {
   name = "panda3d-gltf";
   version = "1.3.0";
   pyproject = true;
-  #format = "wheel";
   build-system = [
     setuptools
     wheel
