@@ -25,11 +25,7 @@ buildPythonPackage rec {
     wheel
   ];
 
-  src = callPackage (
-    if stdenv.hostPlatform.system == "x86_64-linux" then ./panda3d/linux/x86_64.nix
-    else if stdenv.hostPlatform.system == "aarch64-linux" then ./panda3d/linux/aarch64.nix
-    else "") {};
-
+  src = callPackage ./panda3d/${stdenv.hostPlatform.system}.nix {};
 
   nativeBuildInputs = [
     autoPatchelfHook
