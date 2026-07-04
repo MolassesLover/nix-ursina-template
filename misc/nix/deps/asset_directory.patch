@@ -1,0 +1,11 @@
+--- a/ursina/application.py
++++ b/ursina/application.py
+@@ -11,7 +11,7 @@
+ print_entity_definition = False
+ 
+ package_folder = Path(__file__).parent
+-asset_folder = Path(sys.argv[0]).parent
++asset_folder = Path(f'{Path.home()}/.local/share/ursinaproject/assets')
+ blender_paths = dict()
+ 
+ development_mode = True
