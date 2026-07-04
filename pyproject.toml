@@ -1,0 +1,11 @@
+[project]
+name = "ursinaproject"
+version = "0.1.0"
+description = "An Ursina project."
+
+authors = [
+    {name = "MolassesLover"}
+]
+
+[project.scripts]
+ursinaproject = "ursinaproject:cli.main"
